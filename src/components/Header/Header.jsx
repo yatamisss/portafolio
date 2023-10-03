@@ -1,14 +1,13 @@
+import { Link } from "react-router-dom";
+import "../Header/Header.scss"
+
 const Header = () => {
     return (
         <>
             <header>
                 <nav className="nav-bar">
-                        <a className="nav-bar__a" href="">inicio</a>
-                        <a className="nav-bar__a" href="">videos mas populares</a>
-                        <form className="nav-bar__form" action="">
-                            <input type="search" placeholder="Encuentra mucho más" />
-                            <button type="submit">Buscar</button>
-                        </form>
+                    <Link className="nav-bar__link" to="/">Portafolio</Link>
+                    <Link className="nav-bar__link" to="/contacto">Contacto</Link>
                 </nav>
             </header>
         </>

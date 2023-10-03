@@ -1,0 +1,61 @@
+.contenedor {
+    display: flex;
+    /* Utilizamos flexbox para crear las dos columnas */
+    align-items: flex-start;
+    /* Alinea las columnas en la parte superior */
+}
+
+.columna-estatica {
+    flex: 0 0 auto;
+    /* Hace que esta columna sea estática y no se expanda */
+    width: 400px;
+    /* Ancho de la columna estática */
+    background-color: rgb(111, 237, 111);
+    /* Color de fondo opcional */
+    padding: 50px;
+    /* Espacio opcional alrededor del contenido */
+    border-radius: 20px;
+    display: flex;
+    /* Utilizamos flexbox para centrar contenido */
+    flex-direction: column;
+    /* Alinea el contenido verticalmente */
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    align-items: center;
+    /* Centra horizontalmente el contenido */
+
+
+    &__img {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        max-width: 100%;
+        object-fit: cover;
+
+    }
+}
+
+.columna-desplazable {
+    flex: 1;
+    /* Hace que esta columna se expanda para ocupar el espacio restante */
+    overflow-y: auto;
+    /* Agrega una barra de desplazamiento vertical si es necesario */
+    max-height: 400px;
+    /* Establece una altura máxima para el desplazamiento */
+    display: flex;
+    /* Utilizamos flexbox para centrar contenido */
+    flex-direction: column;
+    /* Alinea el contenido verticalmente */
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    align-items: center;
+    /* Centra horizontalmente el contenido */
+
+}
+
+
+.scrollable {
+    padding: 10px;
+    /* Espacio opcional alrededor del contenido desplazable */
+
+}

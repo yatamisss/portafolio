@@ -1,15 +1,25 @@
 import './App.css'
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
+import Layout from './components/Layout/Layout'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Portafolio from './pages/Portafolio/Portafolio'
+import Contacto from './pages/Contacto/Contacto'
+import NotFound from './pages/NotFound/NotFound'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+    
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<Portafolio />} />
+            <Route path='/contacto' element={<Contacto />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+     
     </>
   )
 }
