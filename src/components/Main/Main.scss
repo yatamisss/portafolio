@@ -1,61 +1,57 @@
-.contenedor {
-    display: flex;
-    /* Utilizamos flexbox para crear las dos columnas */
-    align-items: flex-start;
-    /* Alinea las columnas en la parte superior */
+.contenedor-main {
+    margin: 60px;
 }
 
-.columna-estatica {
-    flex: 0 0 auto;
-    /* Hace que esta columna sea estática y no se expanda */
-    width: 400px;
-    /* Ancho de la columna estática */
-    background-color: rgb(111, 237, 111);
-    /* Color de fondo opcional */
-    padding: 50px;
-    /* Espacio opcional alrededor del contenido */
-    border-radius: 20px;
+.contenedor-presentacion {
+    padding: 30px;
+    text-align: left;
+    font-family: Arial, sans-serif;
     display: flex;
-    /* Utilizamos flexbox para centrar contenido */
-    flex-direction: column;
-    /* Alinea el contenido verticalmente */
-    justify-content: center;
-    /* Centra verticalmente el contenido */
     align-items: center;
-    /* Centra horizontalmente el contenido */
+    justify-content: center;
+   //background-image: linear-gradient(45deg, #1d1e1e 0%, #313131 100%);
+    //background-image: linear-gradient(45deg, #2193b0 0%, #6dd5ed 100%);
+    background-image: linear-gradient(45deg, #045a4c 0%, #213954 100%);
+    border-radius: 20px;
+}
 
+.contenedor-presentacion img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
 
-    &__img {
-        border-radius: 100%;
-        width: 200px;
-        height: 200px;
-        max-width: 100%;
-        object-fit: cover;
+.contenedor-presentacion p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: white;
+}
 
+h1 {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contenedor-presentacion {
+        padding: 10px;
+    }
+
+    #contenedor-presentacion img {
+        max-width: 150px;
     }
 }
 
-.columna-desplazable {
+.imagen-perfil {
     flex: 1;
-    /* Hace que esta columna se expanda para ocupar el espacio restante */
-    overflow-y: auto;
-    /* Agrega una barra de desplazamiento vertical si es necesario */
-    max-height: 400px;
-    /* Establece una altura máxima para el desplazamiento */
-    display: flex;
-    /* Utilizamos flexbox para centrar contenido */
-    flex-direction: column;
-    /* Alinea el contenido verticalmente */
-    justify-content: center;
-    /* Centra verticalmente el contenido */
-    align-items: center;
-    /* Centra horizontalmente el contenido */
+    /* Ocupa la mitad del espacio disponible */
 
 }
 
-
-.scrollable {
-    padding: 10px;
-    /* Espacio opcional alrededor del contenido desplazable */
-
+.descripcion {
+    padding: 30px;
+    /* Añade espaciado alrededor del texto */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
 }

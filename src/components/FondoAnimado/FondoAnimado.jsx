@@ -1,13 +1,21 @@
+import React from "react";
 import "../FondoAnimado/FondoAnimado.scss"
+import video from "../../assets/images/138595 (720p).mp4"
 
 const FondoAnimado = () => {
     return (
-        <div className="fondo-gradiente">
-            <video autoplay loop muted>
-                <source src="mi-video.mp4" type="video/mp4"/>
+        <>
+            <div className="fondo-video">
+                <video autoPlay loop muted>
+                    <source src={video} type="video/mp4" />
                     Tu navegador no admite el elemento de video.
-            </video>
-        </div>
+                </video>
+            </div>
+        </>
     );
 }
 export default FondoAnimado;
+
+
+
+

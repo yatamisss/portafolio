@@ -1,37 +1,17 @@
 import "../Main/Main.scss"
-import fotoPerfil from "../../assets/images/descarga (2).jpg"
+import fotoPerfil from "../../assets/images/IMG_20230423_154220956.jpg"
 
 const Main = () => {
     return (
         <>
-            <main>
-                <div className="contenedor">
-                    <div className="columna-estatica">
-                        <img className="columna-estatica__img" src={fotoPerfil} alt="foto de perfil" />
-                        <h1>BIENVENIDO/A</h1>
-                        <p>Mi nombre es Yatamis Andrea Spolman Millaquipai</p>
-
+            <main className="contenedor-main">
+                <div className="contenedor-presentacion">
+                    <div className="imagen-perfil">
+                        <img src={fotoPerfil} alt="Tu nombre" />
                     </div>
-                    <div className="columna-desplazable">
-                        {/*Contenido desplazable*/}
-                        <div className="scrollable">
-                            <div className="scrollable__item1">
-                                <div className="sscrollable__item1--contenedor">
-                                    <img className="sscrollable__item1--contenedor"src="" alt="" />
-                                    <h3 className="sscrollable__item1--contenedor">sobre mi</h3>
-                                </div>
-                                <div className="sscrollable__item1--contenedor">
-                                    <img src="" alt="" />
-                                    <h3>sobre mi</h3>
-                                </div>
-                                <div className="sscrollable__item1--contenedor">
-                                    <img src="" alt="" />
-                                    <h3>sobre mi</h3>
-                                </div>
-                            </div>
-                            <div className="scrollable__item2">
-                            </div>
-                        </div>
+                    <div className="descripcion">
+                        <h1>Bienvenido/a, es un placer encontarte por aquí</h1>
+                        <p>Mi nombre es [Tu Nombre], soy [tu profesión] con [número de años] de experiencia en [tu especialidad]. Estoy apasionado por [tu área de especialización] y he trabajado en proyectos emocionantes como [proyectos relevantes].</p>
                     </div>
                 </div>
             </main>
