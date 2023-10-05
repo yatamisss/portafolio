@@ -2,7 +2,7 @@
   border-radius: 20px;
   padding: 30px;
   margin: 50px;
-  background-image: linear-gradient(45deg, #045a4c 0%, #213954 100%);
+  background-image: linear-gradient(45deg, #2193b0 0%, #6dd5ed 100%);
 }
 
 .contenido__titulo {
@@ -11,15 +11,41 @@
 }
 
 .contenido__skills {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) auto; /* 4 columnas */
-  grid-gap: 20px; /* Espacio entre las habilidades */
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan en filas */
+  gap: 100px;
+  /* Espacio entre los elementos skill */
   text-align: center;
   align-items: center;
+  justify-content: center;
+
 }
 
 .skill {
-  text-align: center; /* Centra el contenido */
+  text-align: center;
+  /* Centra el contenido */
 }
 
+@media (max-width: 320px) {
+  .contenido {
+    margin: 8px;
+  }
+
+  .contenido__titulo {
+    margin: 0;
+  }
+
+  .contenido__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skill__svg {
+    width: 50px;
+    height: 50px;
+  }
+}

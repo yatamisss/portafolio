@@ -1,6 +1,7 @@
 import Main from "../../components/Main/Main"
 import Contenido from "../../components/Contenido/Contenido";
 import Proyecto from "../../components/proyecto/Proyecto";
+import Work from "../../components/Work/Work";
 
 const Portafolio = () => {
     return (
@@ -9,7 +10,7 @@ const Portafolio = () => {
         <Main/> 
         <Proyecto/>
         <Contenido/>
-
+        <Work/>
         </section>
         </>
     )

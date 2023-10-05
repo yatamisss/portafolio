@@ -4,24 +4,50 @@
     justify-content: end;
     align-items: center;
 
+    &__link2 {
+        padding-right: 50px;
+        text-decoration: none;
+        color: gray
+    }
+
     &__link {
         margin-right: 20px;
         padding: 15px;
         color: white;
         text-decoration: none;
+
         background-color: royalblue;
         border-radius: 10px;
 
+        &:hover {
+            background-color: cornflowerblue;
+            transition: background-color 1s;
+        }
     }
-
-    :hover{
-        background-color:cornflowerblue;
-        transition: background-color 1s; 
-    }
-
-   
 }
 
+@media (max-width: 768px) {
+    .nav-bar {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        /* Cambia el número de columnas para adaptarse a pantallas más pequeñas */
+    }
+}
 
+@media (max-width: 320px) {
+    .nav-bar {
+        display: grid;
+    }
 
-  
+    .nav-bar__link {
+        font-size: 16px;
+        margin-right: 5px;
+        padding: 5px;
+        /* Ajusta los estilos de los enlaces para pantallas aún más pequeñas */
+    }
+
+    .nav-bar__link2 {
+        font-size: xx-small;
+        padding-right: 20px;
+        /* Ajusta los estilos de link2 para pantallas aún más pequeñas */
+    }
+}

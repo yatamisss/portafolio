@@ -6,7 +6,7 @@ const FondoAnimado = () => {
     return (
         <>
             <div className="fondo-video">
-                <video autoPlay loop muted>
+                <video className="video" autoPlay loop muted>
                     <source src={video} type="video/mp4" />
                     Tu navegador no admite el elemento de video.
                 </video>

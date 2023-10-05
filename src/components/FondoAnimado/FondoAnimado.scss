@@ -1,18 +1,36 @@
 /* FondoAnimado.scss */
 .fondo-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* Para que esté detrás del contenido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Para que esté detrás del contenido */
+}
+
+/* Ajusta el video para que ocupe toda la pantalla */
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media query para pantallas de 320px de ancho o menos*/
+@media (max-width: 320px) {
+  .fondo-video {
+    /*Establece una imagen de fondo en lugar de un video */
+    background-image: url('../../assets/images/pexels-ds-stories-6989948.jpg');
+    background-size: contain;
+    width: 300;
+    background-repeat: no-repeat;
+    background-position: center;
+    
   }
-  
-  /* Ajusta la imagen para que ocupe toda la pantalla */
+
+
   .video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* Oculta el video en pantallas pequeñas */
+    display: none !important;
   }
-  
+}
