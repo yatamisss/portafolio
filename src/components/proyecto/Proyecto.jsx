@@ -4,7 +4,7 @@ const Proyecto = () => {
     return (
         <>
             <main className="container-cards">
-                <h1 className="container-card__h1">Formacion</h1>
+                <h1 id="formacion" className="container-card__h1">Formacion</h1>
                 <section className="container">
                     <div className="card">
                         <div className="content">
@@ -25,7 +25,7 @@ const Proyecto = () => {
                         </div>
                     </div>
                 </section>
-                <h1 className="container-card__h1">Hobbies</h1>
+                <h1 id="hobbies" className="container-card__h1">Hobbies</h1>
                 <section class="container">
                     <div class="card">
                         <div class="content">

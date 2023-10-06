@@ -15,16 +15,38 @@ const Header = () => {
         }
     }, [location]);
 
+    //Para implementar el desplazamiento suave en mi componente
+    useEffect(() => {
+        const scrollToSection = (sectionId) => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        };
+
+        const handleScrollToSection = (sectionId) => {
+            return (event) => {
+                event.preventDefault();
+                scrollToSection(sectionId);
+            };
+        };
+
+        document.getElementById("scrollToSkills").addEventListener("click", handleScrollToSection("skills"));
+        document.getElementById("scrollToHobbies").addEventListener("click", handleScrollToSection("hobbies"));
+        document.getElementById("scrollToFormacion").addEventListener("click", handleScrollToSection("formacion"));
+        document.getElementById("scrollToProjects").addEventListener("click", handleScrollToSection("projects"));
+    }, []);
+
     return (
         <>
             <header>
                 <nav className="nav-bar">
                     {showLink2 && (
                         <>
-                            <a className="nav-bar__link2" href="#skills">Skills</a>
-                            <a className="nav-bar__link2" href="">Hobbies</a>
-                            <a className="nav-bar__link2" href="">Formación</a>
-                            <a className="nav-bar__link2" href="#projects">Proyectos</a>
+                            <a className="nav-bar__link2" id="scrollToSkills" href="#skills">Skills</a>
+                            <a className="nav-bar__link2" id="scrollToHobbies" href="#hobbies">Hobbies</a>
+                            <a className="nav-bar__link2" id="scrollToFormacion" href="#formacion">Formación</a>
+                            <a className="nav-bar__link2" id="scrollToProjects" href="#projects">Proyectos</a>
                         </>
                     )}
                     <Link className="nav-bar__link" to="/">Portafolio</Link>
