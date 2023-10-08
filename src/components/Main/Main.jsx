@@ -27,14 +27,14 @@ const Main = () => {
                     </div>
                     <div className="descripcion">
                         {isHovered ? (
-                            <h1>Sobre mi</h1>
+                            <h1>Sobre mí</h1>
                         ) : (
-                            <h1>Bienvenido/a, es un placer que te encuentres hoy aquí</h1>
+                            <h1>¡Hola! mi nombre es Yatamis Spolman ¡Bienvenido a mi portafolio en línea!</h1>
                         )}
                         {isHovered ? (
-                            <p>Soy una persona bastante alegre, carismatica, y trabajadora, siempre he disfrutado del poder aprender cosas nuevas...</p>
+                            <p>Soy una jovén entusiasta y comprometida, apasionada por la creatividad y el aprendizaje constante, siempre he disfrutado del poder aprender cosas nuevas y es así como llegue a la programación. Algo que valoro bastante es la creatividad, la innovación y la colaboración en mi trabajo y en cualquier aspecto en general.</p>
                         ) : (
-                            <p>Mi nombre es [Tu Nombre], soy [tu profesión] con [número de años] de experiencia en [tu especialidad]. Estoy apasionado por [tu área de especialización] y he trabajado en proyectos emocionantes como [proyectos relevantes].</p>
+                            <p>Soy desarrolladora Full Stack Java Junior y cuento con experiencia en el desarrollo de proyectos tanto personales como grupales. Mi objetivo es seguir aprendiendo y creando  aplicaciones tangibles, interactivas y funcionales, y este portafolio es un vistazo a mi viaje y logros en este campo de la programación.</p>
                         )}
                     </div>
                 </div>

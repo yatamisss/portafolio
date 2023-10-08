@@ -50,15 +50,15 @@ const Contacto = () => {
         <>
             <div className="form-container">
                 <form className="form" ref={form} onSubmit={sendEmail}>
-                    <div className="title">Contact us</div>
-                    <label>Name</label>
+                    <div className="title">Hablemos</div>
+                    <label>Nombre</label>
                     <input type="text" name="user_name" className="input" />
                     {validationErrors.user_name && <div className="error">{validationErrors.user_name}</div>}
-                    <label>Email</label>
+                    <label>Gmail</label>
                     <input type="email" name="user_email" className="input" />
-                    <label>Message</label>
+                    <label>Mensaje</label>
                     <textarea name="message" />
-                    <input type="submit" value="Send" className='button' />
+                    <input type="submit" value="enviar" className='button' />
                 </form>
             </div>
         </>

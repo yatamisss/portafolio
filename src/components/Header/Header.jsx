@@ -43,8 +43,8 @@ const Header = () => {
                 <nav className="nav-bar">
                     {showLink2 && (
                         <>
-                            <a className="nav-bar__link2" id="scrollToSkills" href="#skills">Skills</a>
-                            <a className="nav-bar__link2" id="scrollToHobbies" href="#hobbies">Hobbies</a>
+                            <a className="nav-bar__link2" id="scrollToSkills" href="#skills">Habilidades</a>
+                            <a className="nav-bar__link2" id="scrollToHobbies" href="#hobbies">Aficiones</a>
                             <a className="nav-bar__link2" id="scrollToFormacion" href="#formacion">Formación</a>
                             <a className="nav-bar__link2" id="scrollToProjects" href="#projects">Proyectos</a>
                         </>
