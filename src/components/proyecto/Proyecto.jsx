@@ -30,7 +30,7 @@ const Proyecto = () => {
                     <div class="card">
                         <div class="content">
                             <p class="logo">Deportes</p>
-                            <div class="h6">Correr, patinar &amp; ciclismo</div>
+                            <div class="h6">Correr, patinar &amp; andar en bicicleta</div>
                             <div class="hover_content">
                                 <p>Si bien disfruto de la programación, también me gusta mucho hacer actividades al aire libre, como salir a correr, patinar y andar en bicicleta (no profesionalmente). Considero que son actividades que te brindan disciplina y te ayudan a bajar el estrés.</p>
                             </div>
